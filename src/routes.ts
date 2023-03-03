@@ -13,7 +13,7 @@ function routes(app: Express) {
     res.send("ıt worked");
   });
 
-  app.post("/api/users/signup", validate(createUserSchema), createUserHandler);
+  app.post("/api/users", validate(createUserSchema), createUserHandler);
 
   app.post(
     "/api/sessions",
