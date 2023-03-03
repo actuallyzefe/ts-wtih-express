@@ -21,6 +21,9 @@ const sessionSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    userAgent: {
+      type: String,
+    },
   },
   {
     timestamps: true,
