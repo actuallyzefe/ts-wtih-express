@@ -42,3 +42,4 @@ export async function getUserSessionHandler(req: Request, res: Response) {
   console.log({ sessions });
   return res.send(sessions);
 }
+//

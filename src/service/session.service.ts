@@ -10,3 +10,4 @@ export async function createSession(userId: string, userAgent: string) {
 export async function findSession(query: FilterQuery<SchemaDocument>) {
   return await SessionModel.find(query).lean(); // LEAN() => toJson gibidir object return eder
 }
+//
